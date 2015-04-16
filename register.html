@@ -5,24 +5,23 @@
 <body>
  <div style="line-height:40px;">
  <div>
-  <form action="adduser.php">
-	Nickname<br><input type="text" name="nik" maxlength="20" size="25" padding: 5px;></form>
-	Password<br><input type="text" name="password" maxlength="20" size="25"><br>
-	Confirm password<br><input type="text" name="confirm_pass" maxlength="20" size="25"></form><br>
-	Name<br><input type="text" name="name" maxlength="20" size="25"></form><br>
-	Surname<br><input type="text" name="surname" maxlength="20" size="25"></form><br>
-	Address<br><input type="text" name="address" maxlength="20" size="25"><br>
-	Country<br><input type="text" name="country" maxlength="20" size="25"><br>
-	City<br><input type="text" name="city" maxlength="20" size="25"><br>
-	Street<br><input type="text" name="street" maxlength="20" size="25"><br>
-		<input type="submit" value="Registration">
-	</form><br>
-	<form enctype="multipart/form-date" action=savefile.php"method="post">
+  <form action="adduser.php" method="post">
+<p>Name: <br><input name="name" type="text" maxlength="20" size="25"></p>
+<p>Surname: <br><input name="surname" type="text" maxlength="20" size="25"></p>
+<p>Nickname: <br><input name="nik" type="text" maxlength="20" size="25" padding: 5px;></p>
+<p>Password: <br><input name="password" type="text" maxlength="20" size="25"></p>
+<p>Confirm password: <br><input name="confpassword" type="text" maxlength="20" size="25"></p>
+<p>E-mail: <br><input name="email" type="text" maxlength="20" size="25"><br></p>
+<p>Country: <br><input name="country" type="text" maxlength="20" size="25"><br></p>
+<p>City: <br><input name="city" type="text" maxlength="20" size="25"><br></p>
+
+<p><input type='submit' value='Submit'></p>
+<form enctype="multipart/form-date" action=savefile.php"method="post">
 	<input type="hidden name=MAX_FILE_SIZE" value="1000"><br>
 	Send this file: <input name="userfile" type="file"><br>
 	<input type="submit" Value=Send File">
 
-	</form>
+</form>
 	</div>
 </body>
 <html>
